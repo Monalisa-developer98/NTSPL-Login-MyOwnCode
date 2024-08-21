@@ -1,0 +1,167 @@
+<header>
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-container d-flex justify-content-between align-items-center">
+                <div class="header-left">
+                    <h1>Meeting Plus</h1>
+                </div>
+                <div class="header-right d-flex gap-4">
+                    <button type="submit" class="meeting-btn">Create Meeting</button>
+                    <div class="notification">
+                        <i class="bi bi-bell"></i>
+                        <span class="notification-count">15</span>
+                    </div>
+                    <div class="header-profile">
+                        <img src="/assets/images/profile-image.jpg" class="profile-image mx-2">
+                        <span class="profile-name">Priyanka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <nav class="navbar navbar-expand-lg p-0">
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                  <a class="nav-link active d-flex flex-column align-items-center border-right" aria-current="page" href="#">
+                    <i class="bi bi-house-door"></i> <span class="menu-label">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column align-items-center" href="#">
+                    <i class="bi bi-clock"></i> <span class="menu-label">Timeline</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="sidebar">
+    <div class="logo"><img src="assets/images/Ntspl-Logo-white.png"></div>
+    
+    <ul class="navbar-nav me-auto mt-5">
+        <li class="nav-item">
+          <a class="nav-link text-white d-flex gap-2 align-items-center"  href="#"><img src="assets/images/meeting.png"><span class="nav-link-label">Meetings</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white d-flex gap-2 align-items-center" href="#"><img src="assets/images/clipboard.png"><span class="nav-link-label">Action</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white d-flex gap-2 align-items-center" href="#"><img src="assets/images/settings.png"><span class="nav-link-label">Manage</span></a>
+        </li>
+    </ul>
+    <!-- <div class="meeting-image"><img src="assets/images/meeting2.svg"></div> -->
+</div>
+<div class="meeting-container">
+    <div class="meeting-table p-3">
+
+       <div class="table-header d-flex justify-content-between">
+        <h2 class="h2 float-start">Meetings</h2>
+        
+        <button type="button" class="btn-filter float-end"><span class="filter-label">Filter</span><i class="bi bi-funnel"></i></button>
+       </div>
+       
+        <div class="table-container p-3 border-1 rounded-3">
+
+          <h5 class="h5 float-start">Showing 1 to 2 of 2 entries</h5>
+          <div class="search-bar float-end">
+            <input type="search" name="search" id="search" placeholder="Search">
+          </div>
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Meeting Date & Time</th>
+                    <th scope="col">Meeting Title</th>
+                    <th scope="col">Attendees</th>
+                    <th scope="col">RSVP Confirmation</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action Due</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>09 Feb 2024 <span class="date-label d-block">11:00 AM</span></td>
+                    <td>Friday Morning Meeting 
+                      <span class="btn-groups d-block mt-1">
+                        <button class="meeting-btn mr-1">Yes</button>
+                        <button class="meeting-btn mr-1">No</button>
+                        <button class="meeting-btn">May Be</button>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="name name1"> SL</span>
+                      <span class="name name2"> PK</span>
+                      <span class="name name3"> RB</span>
+                      <span class="name name4"> YH</span>
+                    </td>
+                    <td>10 Attendees <span class="date-label d-block">5 Yes, 1 No, 5 Awaiting</span></td>
+                    <td><span class="badge text-bg-success">Scheduled</span></td>
+                    <td>0/0</td>
+                    <td><span class="action-label">...</span></td>
+                  </tr>
+                  <tr>
+                    <td>09 Feb 2024 <span class="date-label d-block ">11:00 AM</span></td>
+                    <td>Friday Morning Meeting
+                      <span class="btn-groups d-block mt-1">
+                        <button class="meeting-btn mr-1">Yes</button>
+                        <button class="meeting-btn mr-1">No</button>
+                        <button class="meeting-btn">May Be</button>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="name name1"> SL</span>
+                      <span class="name name2"> PK</span>
+                      <span class="name name3"> RB</span>
+                      <span class="name name4"> YH</span>
+                    </td>
+                    <td>10 Attendees <span class="date-label d-block">5 Yes, 1 No, 5 Awaiting</span></td>
+                    <td><span class="badge text-bg-primary">Closed</span></td>
+                    <td>0/0</td>
+                    <td><span class="action-label">...</span></td>
+                  </tr>
+                  <tr>
+                    <td>09 Feb 2024 <span class="date-label d-block">11:00 AM</span></td>
+                    <td>Friday Morning Meeting
+                      <span class="btn-groups d-block mt-1">
+                        <button class="meeting-btn mr-1">Yes</button>
+                        <button class="meeting-btn mr-1">No</button>
+                        <button class="meeting-btn">May Be</button>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="name name1"> SL</span>
+                      <span class="name name2"> PK</span>
+                      <span class="name name3"> RB</span>
+                      <span class="name name4"> YH</span>
+                    </td>
+                    <td>10 Attendees <span class="date-label d-block">5 Yes, 1 No, 5 Awaiting</span></td>
+                    <td><span class="badge text-bg-success">Rescheduled</span></td>
+                    <td>0/0</td>
+                    <td><span class="action-label">...</span></td>
+                  </tr>
+                  <tr>
+                    <td>09 Feb 2024 <span class="date-label d-block">11:00 AM</span></td>
+                    <td>Friday Morning Meeting
+                      <span class="btn-groups d-block mt-1">
+                        <button class="meeting-btn mr-1">Yes</button>
+                        <button class="meeting-btn mr-1">No</button>
+                        <button class="meeting-btn">May Be</button>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="name name1"> SL</span>
+                      <span class="name name2"> PK</span>
+                      <span class="name name3"> RB</span>
+                      <span class="name name4"> YH</span>
+                    </td>
+                    <td>10 Attendees <span class="date-label d-block">5 Yes, 1 No, 5 Awaiting</span></td>
+                    <td><span class="badge text-bg-danger">Cancelled</span></td>
+                    <td>0/0</td>
+                    <td><span class="action-label">...</span></td>
+                  </tr>                 
+                </tbody>
+              </table>
+    </div>
+    </div>
+</div>
+

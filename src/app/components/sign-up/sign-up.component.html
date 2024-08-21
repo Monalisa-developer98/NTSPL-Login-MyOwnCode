@@ -1,0 +1,84 @@
+<section  class="user-login">
+    <div  class="container-fluid">
+        <div  class="row">
+            <div  class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div  class="loginform-container"><img 
+                        class="ntspl-logo" src="https://demo2.ntspl.co.in/assets/images/ntspl_logo.png">
+                    
+                        <div  class="text">
+                            <h4 >Welcome to Meeting Plus</h4>
+                            <p>Please fill the below form to create a new account</p>
+                        </div>
+                        
+                        <div class="step-form">
+                              <mat-stepper [linear]="isLinear" #stepper>
+                                <mat-step [stepControl]="firstFormGroup">
+                                  <form [formGroup]="firstFormGroup" class="step-form-inn">
+                                    <ng-template matStepLabel>Fill your name</ng-template>
+                                    <mat-form-field>
+                                      <mat-label>Name</mat-label>
+                                      <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                                    </mat-form-field>
+                                    <mat-form-field>
+                                      <mat-label>Email</mat-label>
+                                      <input matInput placeholder="Email" formControlName="secondCtrl" required>
+                                    </mat-form-field>
+                                    <div>
+                                      <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                  </form>
+                                </mat-step>
+                                <mat-step [stepControl]="secondFormGroup" label="Fill password">
+                                  <form [formGroup]="secondFormGroup">
+                                    <mat-form-field>
+                                      <mat-label>Password</mat-label>
+                                      <input matInput formControlName="thirdCtrl" placeholder="xxxxxx" required>
+                                    </mat-form-field>  
+                                    <div>
+                                      <button mat-button matStepperPrevious>Back</button>
+                                      <button mat-button matStepperNext>Next</button>
+                                    </div>
+                                  </form>
+                                </mat-step>
+                                <mat-step>
+                                  <ng-template matStepLabel>Done</ng-template>
+                                  <p>You are now done.</p>
+                                  <div>
+                                    <button mat-button matStepperPrevious>Back</button>
+                                    <button mat-button (click)="stepper.reset()">Reset</button>
+                                  </div>
+                                </mat-step>
+                              </mat-stepper>
+                              
+                        </div>
+                   
+              
+                <div class="router-links">
+                        <button class="login-btn" (click)="onSubmit()">Register</button>
+                        
+                            <div  class="back d-flex">Already have an account?<span>
+                                <a routerLink="/">
+                                <button class="signin">Sign In</button>
+                            </a></span>
+                        </div>
+                       
+                </div>        
+                    
+                </div>
+            </div>
+            <div  class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div  class="blue-box-cont">
+                    <div  class="blue-box">
+                        <div  class="slider-cont">
+                            <h2 >Meeting Plus</h2>
+                            <h6 >Where Meeting Become Meaningful</h6>
+                            <div  class="white-box"><img  alt=""
+                                    src="https://demo2.ntspl.co.in/assets/images/meeting.png"></div>
+                        </div>
+                    </div>
+                    <p  class="copyright">© 2024 NTSPL All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
